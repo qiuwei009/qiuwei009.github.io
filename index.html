@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link href="/favicon.ico" rel="icon" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <!--    <link href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" rel="stylesheet" />-->
+    <title>智能监测设备云平台</title>
+    
+    <script>
+        (function () {
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+            const setting = sessionStorage.getItem('dark') ? JSON.parse(sessionStorage.getItem('dark')) : 'light'
+            if (setting === 'dark') {
+                document.documentElement.classList.toggle('dark', true)
+                sessionStorage.setItem('dark', JSON.stringify('dark'))
+            } else {
+                document.documentElement.classList.remove('dark', true)
+                sessionStorage.setItem('dark', JSON.stringify('light'))
+            }
+        })()
+    </script>
+    <!--    <script type="text/javascript">-->
+    <!--        window._AMapSecurityConfig = {-->
+    <!--            securityJsCode:'「98069461ffb63227dd37d92697a20326」',-->
+    <!--        }-->
+    <!--    </script>-->
+    <!--    <script src="https://webapi.amap.com/loader.js"></script>-->
+    <!--    &lt;!&ndash;引入UI组件库异步版本main-async.js（1.1版本） &ndash;&gt;-->
+    <!--    <script src="//a.amap.com/Loca/static/mock/districts.js"></script>-->
+    <!--    &lt;!&ndash; UI组件库 1.0 &ndash;&gt;-->
+    <!--    <script src="//webapi.amap.com/ui/1.1/main.js?v=1.1.1"></script>-->
+  <script type="module" crossorigin src="/assets/index.7a1cbfda.js"></script>
+  <link rel="modulepreload" href="/assets/@vue.bf949a70.js">
+  <link rel="modulepreload" href="/assets/vue-router.8e65bb6b.js">
+  <link rel="modulepreload" href="/assets/axios.1257cc19.js">
+  <link rel="modulepreload" href="/assets/jquery.310f556f.js">
+  <link rel="modulepreload" href="/assets/vue-demi.b3a9cad9.js">
+  <link rel="modulepreload" href="/assets/pinia.c6d8a7dc.js">
+  <link rel="modulepreload" href="/assets/dayjs.af8763dd.js">
+  <link rel="modulepreload" href="/assets/lodash-es.5d194466.js">
+  <link rel="modulepreload" href="/assets/@vueuse.842cb5bc.js">
+  <link rel="modulepreload" href="/assets/@element-plus.2727cb8c.js">
+  <link rel="modulepreload" href="/assets/async-validator.5d25c98b.js">
+  <link rel="modulepreload" href="/assets/@popperjs.7a88ba6a.js">
+  <link rel="modulepreload" href="/assets/@ctrl.2e36ce53.js">
+  <link rel="modulepreload" href="/assets/element-plus.04a089c1.js">
+  <link rel="modulepreload" href="/assets/lodash.ab0557e0.js">
+  <link rel="stylesheet" href="/assets/element-plus.cb9da7b1.css">
+  <link rel="stylesheet" href="/assets/index.4978ad31.css">
+  <link rel="stylesheet" href="/assets/animate.css.ee1c1666.css">
+</head>
+<body>
+    <div id="app"></div>
+    
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=b682d911b6c7244e2780328b2cf8b1a0&plugin=AMap.MapType,AMap.MouseTool"></script>
+</body>
+</html>
