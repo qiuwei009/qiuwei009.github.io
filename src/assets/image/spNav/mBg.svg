@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="572px" height="417px" viewBox="0 0 572 417" version="1.1"
+     xmlns="http://www.w3.org/2000/svg">
+    <title>看板</title>
+    <defs>
+        <polygon id="path-1" points="22 45 54 13 555 13 555 387 49.3546303 387 22 359.826145"></polygon>
+        <filter x="-4.2%" y="-6.0%" width="108.4%" height="112.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="15" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="15" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1"
+                         result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.129411765   0 0 0 0 0.282352941   0 0 0 0 0.588235294  0 0 0 0.6 0"
+                           type="matrix" in="shadowInnerInner1" result="shadowMatrixInner1"></feColorMatrix>
+            <feGaussianBlur stdDeviation="15" in="SourceAlpha" result="shadowBlurInner2"></feGaussianBlur>
+            <feOffset dx="0" dy="-15" in="shadowBlurInner2" result="shadowOffsetInner2"></feOffset>
+            <feComposite in="shadowOffsetInner2" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1"
+                         result="shadowInnerInner2"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.129411765   0 0 0 0 0.282352941   0 0 0 0 0.584313725  0 0 0 0.6 0"
+                           type="matrix" in="shadowInnerInner2" result="shadowMatrixInner2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixInner1"></feMergeNode>
+                <feMergeNode in="shadowMatrixInner2"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M544.068303,24.2252816 L421.069303,24.2252816 L421.069303,13.2252816 L555.069303,13.2252816 L555.069303,24.2252816 L555.068303,24.2252816 L555.069303,385.225282 L555.069303,385.225282 L555.069303,396.225282 L288.069303,396.225282 L288.069303,385.225282 L544.069303,385.225282 L544.068303,24.2252816 Z"
+              id="path-3"></path>
+        <filter x="-9.0%" y="-6.3%" width="118.0%" height="112.5%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.596078431   0 0 0 0 0.956862745   0 0 0 0 1  0 0 0 1 0" type="matrix"
+                           in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="图标" transform="translate(-67.000000, -579.000000)">
+            <g id="看板" transform="translate(67.000000, 582.774718)">
+                <polyline id="路径" stroke="#39A3FC" stroke-width="2"
+                          points="555.069303 395.225282 46.0693033 395.225282 14.0693033 363.225282 14.0693033 42.5516352"></polyline>
+                <g id="矩形">
+                    <use fill-opacity="0.196651005" fill="#39A3FC" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <path stroke="#39A3FC" stroke-width="2"
+                          d="M54.4142136,14 L554,14 L554,386 L49.7669032,386 L23,359.409988 L23,45.4142136 L54.4142136,14 Z"
+                          stroke-linejoin="square"></path>
+                </g>
+                <path d="M24.8471338,4.54475287 L37.8935547,42.0946082 L12.3450624,29.0770012 L24.8471338,4.54475287 Z"
+                      id="三角形" stroke="#39A3FC" stroke-width="2" fill="#98F4FF"
+                      transform="translate(25.326873, 23.056898) rotate(-297.000000) translate(-25.326873, -23.056898) "></path>
+                <g id="形状结合" opacity="0.3">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <use fill="#98F4FF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

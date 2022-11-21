@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="573px" height="417px" viewBox="0 0 573 417" version="1.1"
+     xmlns="http://www.w3.org/2000/svg">
+    <title>看板</title>
+    <defs>
+        <polygon id="path-1"
+                 points="0.930696718 32.7747184 32.9306967 0.774718402 533.930697 0.774718402 533.930697 374.774718 28.2853271 374.774718 0.930696718 347.600864"></polygon>
+        <path d="M544.068303,24.2252816 L421.069303,24.2252816 L421.069303,13.2252816 L555.069303,13.2252816 L555.069303,24.2252816 L555.068303,24.2252816 L555.069303,385.225282 L555.069303,385.225282 L555.069303,396.225282 L288.069303,396.225282 L288.069303,385.225282 L544.069303,385.225282 L544.068303,24.2252816 Z"
+              id="path-3"></path>
+        <filter x="-9.0%" y="-6.3%" width="118.0%" height="112.5%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.596078431   0 0 0 0 0.956862745   0 0 0 0 1  0 0 0 1 0" type="matrix"
+                           in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="图标" transform="translate(-66.000000, -132.000000)">
+            <g id="选中" transform="translate(66.930697, 135.774718)">
+                <polyline id="路径" stroke="#39A3FC" stroke-width="2"
+                          points="555.069303 395.225282 46.0693033 395.225282 14.0693033 363.225282 14.0693033 42.5516352"></polyline>
+                <g id="2RISE-LOGO-INTRO--After-two-years-we" transform="translate(21.069303, 12.225282)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <path stroke="#39A3FC" stroke-width="2"
+                          d="M534.930697,-0.225281598 L534.930697,375.774718 L27.8730542,375.774718 L-0.0693032825,348.017021 L-0.0693032825,32.3605048 L32.5164832,-0.225281598 L534.930697,-0.225281598 Z"></path>
+                </g>
+                <path d="M24.8471338,4.54475287 L37.8935547,42.0946082 L12.3450624,29.0770012 L24.8471338,4.54475287 Z"
+                      id="三角形" stroke="#39A3FC" stroke-width="2" fill="#98F4FF"
+                      transform="translate(25.326873, 23.056898) rotate(-297.000000) translate(-25.326873, -23.056898) "></path>
+                <g id="形状结合">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <use fill="#98F4FF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
