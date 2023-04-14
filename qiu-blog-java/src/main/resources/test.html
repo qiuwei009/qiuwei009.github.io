@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mirror Tree Graph</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        svg {
+            width: 100%;
+            height: 100vh;
+            font: 10px sans-serif;
+        }
+
+        .link {
+            fill: none;
+            stroke: #ccc;
+            stroke-width: 1.5px;
+        }
+
+        .node circle {
+            fill: #fff;
+            stroke: steelblue;
+            stroke-width: 1.5px;
+        }
+
+        .node text {
+            text-anchor: middle;
+            fill: steelblue;
+        }
+
+    </style>
+</head>
+<body>
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script type="application/javascript">
+    const tree = {
+        name: 'A',
+        children: [
+            {
+                name: 'B',
+                children: [
+                    { name: 'D' },
+                    { name: 'E' }
+                ]
+            },
+            {
+                name: 'C',
+                children: [
+                    { name: 'F' },
+                    { name: 'G' }
+                ]
+            }
+        ]
+    };
+
+    // Create the tree layout
+    const width = 500;
+    const height = 500;
+    const treeLayout = d3.tree().size([height, width]);
+
+    // Create the tree nodes and links
+    const rootNode = d3.hierarchy(tree);
+    const treeData = treeLayout(rootNode);
+    const links = treeData.links();
+    const nodes = treeData.descendants();
+
+    // Reverse the y-coordinates of the nodes
+    nodes.forEach(node => {
+        node.y = -node.y;
+    });
+
+    // Create the svg element and draw the links
+    const svg = d3.select('body')
+        .append('svg')
+        .attr('width', width)
+        .attr('height', height);
+
+    svg.selectAll('.link')
+        .data(links)
+        .enter()
+        .append('path')
+        .attr('class', 'link')
+        .attr('d', d3.linkVertical()
+            .x(d => d.x)
+            .y(d => -d.y));
+
+    // Draw the nodes
+    const node = svg.selectAll('.node')
+        .data(nodes)
+        .enter()
+        .append('g')
+        .attr('class', 'node')
+        .attr('transform', d => `translate(${d.x},${-d.y})`);
+
+    node.append('circle')
+        .attr('r', 10);
+
+    node.append('text')
+        .attr('dy', '0.31em')
+        .attr('x', d => d.children ? -20 : 20)
+        .attr('text-anchor', d => d.children ? 'end' : 'start')
+        .text(d => d.data.name);
+
+</script>
+</body>
+</html>
